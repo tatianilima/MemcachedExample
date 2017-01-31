@@ -5,7 +5,7 @@
     echo "Versão Memcached : " . $memcache->getVersion();
      
     $testeArray = array('Oneide', 'Luiz', 'Schneider');
-    $temp       = serialize($testArray);
+    $temp       = serialize($testeArray);
     $memcache->add("key", $temp, false, 30);
  
     echo "Dados em cache:<br />\n";
